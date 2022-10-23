@@ -1,21 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const Public = () => {
-    <section className="Public">
-        <header>
-            <h1>Welcome to Store</h1>
-        </header>
-        <main>
-            <p>Loaction in Beautiful Town, It provides the servies you need.</p>
-            <p>&nbsp;</p>
-            <address>
-                Store Xyz <br/>
-                007 prov.1 <br/>
-                xyz city, 7262 <br/>
-            </address>
-        </main>
-        <footer>
-            <Link to={'/login'}>Employee Login</Link>
-        </footer>
-    </section>
+
+    const content = (
+        <section className="public">
+            <header>
+                <h1>Welcome Store!</h1>
+            </header>
+            <main>
+                <p>Located in Beautiful City, Store provides a service ready to meet your needs.</p>
+                <p>&nbsp;</p>
+                <address>
+                     Store<br />
+                    st.555<br />
+                  
+                </address>
+            </main>
+            <footer>
+                <Link to="/login">Staff Login</Link>
+            </footer>
+        </section>
+
+    )
+    return content
 }
+export default Public
